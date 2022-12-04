@@ -30,5 +30,16 @@ sum([ord(item) - 38 if item.isupper() else ord(item) - 96  for item in [list(set
 
 Second part: 
 ```python
-#did not find a one line solution 
+#did not find a one line solution  (aka. was too lazy to find it)
+```
+
+### Day 3
+First part: 
+```python
+sum([1 for (a,b),(c,d) in [(list(map(int, a.split('-'))), list(map(int, b.split('-')))) for a,b in [abc.split(',') for abc in text.split('\n')]] if (set(range(a,b+1)).issubset(set(range(c,d+1)))) or (set(range(c,d+1)).issubset(set(range(a,b+1))))])
+```
+
+Second part: 
+```python
+sum([1 for (a,b),(c,d) in [(list(map(int, a.split('-'))), list(map(int, b.split('-')))) for a,b in [abc.split(',') for abc in text.split('\n')]] if (len(set(range(a,b+1)) & set(range(c,d+1)))) > 0])
 ```
