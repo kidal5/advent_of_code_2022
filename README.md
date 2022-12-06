@@ -30,7 +30,7 @@ sum([ord(item) - 38 if item.isupper() else ord(item) - 96  for item in [list(set
 
 Second part: 
 ```python
-#did not find a one line solution  (aka. was too lazy to find it)
+# I did not find a one line solution  (aka. was too lazy to find it)
 ```
 
 ### Day 3
@@ -43,3 +43,21 @@ Second part:
 ```python
 sum([1 for (a,b),(c,d) in [(list(map(int, a.split('-'))), list(map(int, b.split('-')))) for a,b in [abc.split(',') for abc in text.split('\n')]] if (len(set(range(a,b+1)) & set(range(c,d+1)))) > 0])
 ```
+
+### Day 4
+First part & second part:
+```python
+# I solved it using class MyStack and for loop.
+```
+
+### Day 5
+First part: 
+```python
+min([i+3 for i in range(len(text) - 3) if len(text[i:i+3]) == len(set(text[i:i+3]))])
+```
+
+Second part: 
+```python
+min([i+14 for i in range(len(text) - 14) if len(text[i:i+14]) == len(set(text[i:i+14]))])
+```
+
