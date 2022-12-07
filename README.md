@@ -61,3 +61,8 @@ Second part:
 min([i+14 for i in range(len(text) - 14) if len(text[i:i+14]) == len(set(text[i:i+14]))])
 ```
 
+### Day 6
+First part & second part:
+```python
+# Definitelly not doing this using oneliner :D My code had about 100 lines.
+```
