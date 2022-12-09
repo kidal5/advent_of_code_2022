@@ -61,8 +61,5 @@ Second part:
 min([i+14 for i in range(len(text) - 14) if len(text[i:i+14]) == len(set(text[i:i+14]))])
 ```
 
-### Day 6
-First part & second part:
-```python
-# Definitelly not doing this using oneliner :D My code had about 100 lines.
-```
+### Day 6 and follwoings:
+Challenges starting on day 6 are much harder and doing them using one line does not seem feasible. I might update this review when some challenge in future become feasible, otherwise not. Keep coding! 
