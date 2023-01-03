@@ -1,5 +1,7 @@
 # Solutions
 
+In the end around 14 challenges were solved with 27 gold stars gained!
+
 ### Day 1
 First part: 
 ```python
